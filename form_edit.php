@@ -31,25 +31,33 @@
 
             <div class="mb-3">
                 <label for="nim" class="form-label">NIM</label>
+                <input type="text" class="form-control" id="nim" name="nim" value="<?php echo $data['nim']; ?>" required>
             </div>
-            <input type="text" class="form-control" id="nim" name="nim" value="<?php echo $data['nim']; ?>" required>
 
             <div class="mb-3">
                 <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $data['nama']; ?>" required>
+
             </div>
-            <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $data['nama']; ?>" required>
 
             <div class="mb-3">
                 <label for="no_hp" class="form-label">No HP</label>
+                <input type="text" class="form-control" id="no_hp" name="no_hp" value="<?php echo $data['no_hp']; ?>" required>
             </div>
-            <input type="text" class="form-control" id="no_hp" name="no_hp" value="<?php echo $data['no_hp']; ?>" required>
 
             <div class="mb-3">
-                <label for="jenis_kelamin" class="form-label">Jenis Kelamin</label>
+                <!-- <label for="jenis_kelamin" class="form-label">Jenis Kelamin</label>
                 <select class="form-select" id="jenis_kelamin" name="jenis_kelamin" required>
                     <option value="Laki-laki" <?php if ($data['jenis_kelamin'] === "Laki-laki") echo 'selected'; ?>>Laki-laki</option>
                     <option value="Perempuan" <?php if ($data['jenis_kelamin'] === "Perempuan") echo 'selected'; ?>>Perempuan</option>
-                </select>
+                </select> -->
+                <label for="jenis_kelamin" class="form-label">Jenis Kelamin</label>
+                <div>
+                    <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki" <?php if ($data['jenis_kelamin'] === "Laki-laki") echo 'checked'; ?> required>
+                    <label for="laki_laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" <?php if ($data['jenis_kelamin'] === "Perempuan") echo 'checked'; ?> required>
+                    <label for="perempuan">Perempuan</label>
+                </div>
             </div>
 
             <div class="mb-3">
@@ -66,10 +74,8 @@
             </div>
 
             <button type="submit" class="btn btn-primary">Simpan</button>
+            <a href="tampil_data.php" class="btn btn-secondary">Kembali</a>
         </form>
-
-        <a href="tampil_data.php" class="btn btn-secondary">Kembali</a>
-
     </div>
 </body>
 

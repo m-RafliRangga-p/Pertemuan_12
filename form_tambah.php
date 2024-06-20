@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah Mahasiswat</title>
+    <title>Tambah Mahasiswa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
@@ -26,10 +26,12 @@
             </div>
             <div class="mb-3">
                 <label for="jenis_kelamin" class="form-label">Jenis Kelamin</label>
-                <input type="radio" class="form-check-input" name="jenis_kelamin" id="laki-laki" value="Laki-laki" required>
-                <label class="form-check-label" for="laki-laki">Laki-laki</label>
-                <input type="radio" class="form-check-input" name="jenis_kelamin" id="perempuan" value="Perempuan" required>
-                <label class="form-check-label" for="perempuan">Perempuan</label>
+                <div>
+                    <input type="radio" class="form-check-input" name="jenis_kelamin" id="laki-laki" value="Laki-laki" required>
+                    <label class="form-check-label" for="laki-laki">Laki-laki</label>
+                    <input type="radio" class="form-check-input" name="jenis_kelamin" id="perempuan" value="Perempuan" required>
+                    <label class="form-check-label" for="perempuan">Perempuan</label>
+                </div>
             </div>
             <div class="mb-3">
                 <label for="jurusan" class="form-label">Jurusan</label>
@@ -43,7 +45,7 @@
                 <textarea class="form-control" id="alamat" name="alamat" rows="3" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Simpan</button>
-            <a href="index.php" class="btn btn-secondary">Kembali</a>
+            <a href="tampil_data.php" class="btn btn-secondary">Kembali</a>
         </form>
     </div>
 </body>
